@@ -6,7 +6,7 @@ var path = require('path');
 // Utworzenie instancji aplikacji express
 const app = express();
 
-// Middleware do autentykacji klienta przy użyciu HTTP Basic Authentication
+// Autentykacja klienta przy użyciu HTTP Basic Authentication
 function authentication(req, res, next) {
     // Pobranie nagłówka "Authorization" z żądania HTTP
     var authheader = req.headers.authorization;
@@ -42,7 +42,7 @@ function authentication(req, res, next) {
 // Ustawienie middleware autentykacji
 app.use(authentication)
 
-// Ustawienie middleware do obsługi plików statycznych z katalogu 'public'
+// Obsługa plików statycznych z katalogu 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Konfiguracja serwera, który słucha na porcie 3000
