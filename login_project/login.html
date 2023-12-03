@@ -2,22 +2,33 @@
 <html lang="en">
 
 <head>
+  <!-- Ustawienie kodowania znaków na UTF-8 -->
   <meta charset="UTF-8">
+  <!-- Tytuł strony -->
   <title>Login</title>
+  <!-- Łączenie zewnętrznego arkusza stylów -->
   <link rel="stylesheet" href="./login.css"></link>
 </head>
 
 <body>
+  <!-- Główny kontener strony -->
   <main id="main-holder">
+    <!-- Nagłówek strony -->
     <h1 id="login-header">Login</h1>
 
+    <!-- Formularz logowania -->
     <form id="login-form">
+      <!-- Pole wprowadzania tekstu dla nazwy użytkownika -->
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <!-- Pole wprowadzania tekstu dla hasła -->
       <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <!-- Przycisk do zatwierdzania formularza (logowania) -->
       <input type="submit" value="Login" id="login-form-submit">
     </form>
 
   </main>
-  <script src="./login.css"></script>
+
+  <!-- Dołączenie zewnętrznego skryptu JavaScript -->
+  <script src="./login.js"></script>
 </body>
 </html>
