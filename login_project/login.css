@@ -1,7 +1,9 @@
+/* Ustawienie wysokości dla elementu html na 100% wysokości widoku */
 html {
   height: 100%;
 }
 
+/* Stylizacja dla całego body */
 body {
   height: 100%;
   margin: 0;
@@ -9,20 +11,22 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: #3a3a3a;
+  background-color: #3a3a3a; /* Kolor tła */
 }
 
+/* Stylizacja dla głównego kontenera strony */
 #main-holder {
-  width: 50%;
-  height: 70%;
+  width: 50%; /* Szerokość kontenera */
+  height: 70%; /* Wysokość kontenera */
   display: grid;
   justify-items: center;
   align-items: center;
-  background-color: white;
-  border-radius: 7px;
-  box-shadow: 0px 0px 5px 2px black;
+  background-color: white; /* Kolor tła */
+  border-radius: 7px; /* Zaokrąglenie rogów */
+  box-shadow: 0px 0px 5px 2px black; /* Cień */
 }
 
+/* Stylizacja dla kontenera wiadomości o błędzie logowania */
 #login-error-msg-holder {
   width: 100%;
   height: 100%;
@@ -31,6 +35,7 @@ body {
   align-items: center;
 }
 
+/* Stylizacja dla wiadomości o błędzie logowania */
 #login-error-msg {
   width: 23%;
   text-align: center;
@@ -38,16 +43,18 @@ body {
   padding: 5px;
   font-size: 12px;
   font-weight: bold;
-  color: #8a0000;
-  border: 1px solid #8a0000;
-  background-color: #e58f8f;
-  opacity: 0;
+  color: #8a0000; /* Kolor tekstu */
+  border: 1px solid #8a0000; /* Grubość i kolor obramowania */
+  background-color: #e58f8f; /* Kolor tła */
+  opacity: 0; /* Początkowe ustawienie przezroczystości */
 }
 
+/* Dodatkowy styl dla drugiej linii wiadomości o błędzie */
 #error-msg-second-line {
   display: block;
 }
 
+/* Stylizacja dla formularza logowania */
 #login-form {
   align-self: flex-start;
   display: grid;
@@ -55,27 +62,30 @@ body {
   align-items: center;
 }
 
+/* Stylizacja dla tekstu zastępczego w polach formularza */
 .login-form-field::placeholder {
-  color: #3a3a3a;
+  color: #3a3a3a; /* Kolor tekstu zastępczego */
 }
 
+/* Stylizacja dla pól formularza */
 .login-form-field {
   border: none;
-  border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a; /* Linia dolna */
   margin-bottom: 10px;
   border-radius: 3px;
-  outline: none;
-  padding: 0px 0px 5px 5px;
+  outline: none; /* Brak konturu */
+  padding: 0px 0px 5px 5px; /* Wypełnienie */
 }
 
+/* Stylizacja dla przycisku zatwierdzania formularza logowania */
 #login-form-submit {
   width: 100%;
   padding: 7px;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: white; /* Kolor tekstu */
   font-weight: bold;
-  background-color: #3a3a3a;
-  cursor: pointer;
-  outline: none;
+  background-color: #3a3a3a; /* Kolor tła */
+  cursor: pointer; /* Zmiana kształtu kursora po najechaniu */
+  outline: none; /* Brak konturu */
 }
